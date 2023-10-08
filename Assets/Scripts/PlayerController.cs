@@ -16,8 +16,20 @@ public class PlayerController : MonoBehaviour
 
     Vector3 moveDirection = Vector3.zero;
     float rotationX = 0;
+    public int health = 5;
 
     CharacterController characterController;
+
+    void OnCollisionEnter(Collision collision) {
+        if (collision.gameObject.tag == "Enemy") {
+            Destroy(collision.gameObject);
+            health--;
+
+            if (health == 0) {
+                Destroy(gameObject);
+            }
+        }
+    }
     // Start is called before the first frame update
     void Start() {
         characterController = GetComponent<CharacterController>();

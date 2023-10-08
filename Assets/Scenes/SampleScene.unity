@@ -799,7 +799,6 @@ GameObject:
   - component: {fileID: 1142431425}
   - component: {fileID: 1142431424}
   - component: {fileID: 1142431428}
-  - component: {fileID: 1142431429}
   m_Layer: 0
   m_Name: Ground
   m_TagString: Untagged
@@ -916,30 +915,6 @@ MonoBehaviour:
   m_MinRegionArea: 2
   m_NavMeshData: {fileID: 23800000, guid: 44d97a7b5719c0d429c87e693181798d, type: 2}
   m_BuildHeightMesh: 0
---- !u!114 &1142431429
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1142431423}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0486bde3b1133e945a2b631e658b4b28, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  enemy: {fileID: 2927329588326542634, guid: e51bc539341cd9b42a48bc45ad946c02, type: 3}
-  spawnPoints:
-  - {fileID: 1360628945}
-  - {fileID: 123342190}
-  - {fileID: 259948415}
-  - {fileID: 1379707959}
-  - {fileID: 1790411856}
-  - {fileID: 638965537}
-  - {fileID: 292130505}
-  - {fileID: 231124647}
-  spawnRate: 10
-  rateScale: 0.0025
 --- !u!1 &1360628945
 GameObject:
   m_ObjectHideFlags: 0
@@ -1336,6 +1311,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1953417387}
+  - component: {fileID: 1953417388}
   m_Layer: 0
   m_Name: Spawns
   m_TagString: Untagged
@@ -1366,6 +1342,30 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1953417388
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1953417386}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0486bde3b1133e945a2b631e658b4b28, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enemy: {fileID: 2927329588326542634, guid: e51bc539341cd9b42a48bc45ad946c02, type: 3}
+  spawnPoints:
+  - {fileID: 1360628945}
+  - {fileID: 123342190}
+  - {fileID: 259948415}
+  - {fileID: 1379707959}
+  - {fileID: 1790411856}
+  - {fileID: 638965537}
+  - {fileID: 292130505}
+  - {fileID: 231124647}
+  spawnRate: 10
+  rateScale: 0.0025
 --- !u!1 &2117408025
 GameObject:
   m_ObjectHideFlags: 0
