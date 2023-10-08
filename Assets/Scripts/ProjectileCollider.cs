@@ -11,5 +11,11 @@ public class ProjectileCollider : MonoBehaviour
             collided = true;
             Destroy(gameObject);
         }
+
+        if (!collided && collision.gameObject.tag == "Enemy") {
+            collided = true;
+            Destroy(gameObject);
+            Destroy(collision.gameObject);
+        }
     }
 }
